@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+body {
+  direction: rtl;
+  font-family: 'vazir' !important;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  flex-wrap: wrap; /* برای چیدمان بهتر در صفحات کوچک */
+}
+
+.control {
+  width: 40vw;
+  min-width: 300px; 
+  direction:ltr;
+}
+
+.box {
+  width: 40vw;
+  min-width: 300px;
+  height: 50vh;
+  background-color: crimson;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box p {
+  background-color: rgb(139, 139, 139);
+  border: 2px solid black;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+
+
+/* ریسپانسیو برای موبایل / Responsive for mobile */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .control,
+  .box {
+    width: 90vw;
+    height: 40vh;
+    margin-bottom: 20px;
+  }
+
+  .box p {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .Sidebar .links li a {
+    font-size: 16px;
+  }
+}
